@@ -3,14 +3,7 @@
 
 function tunmise_style_files(){
     //loading javascript
-    wp_enqueue_script('jq-univesrity-js', get_theme_file_uri("/assets/js/jquery.min.js"), array('jquery'), '1.0', true ); //NULL If jquery isn't in use
-    wp_enqueue_script('scrollex-bap-js', get_theme_file_uri("/assets/js/jquery.scrollex.min.js"), array('jquery'), '1.0', true );
-    wp_enqueue_script('scrolly-bap-js', get_theme_file_uri("/assets/js/jquery.scrolly.min.js"), array('jquery'), '1.0', true );
-    wp_enqueue_script('browser-bap-js', get_theme_file_uri("/assets/js/browser.min.js"), array('jquery'), '1.0', true );
-    wp_enqueue_script('breakpoints-bap-js', get_theme_file_uri("/assets/js/breakpoints.min.js"), array('jquery'), '1.0', true );
-    wp_enqueue_script('util-bap-js', get_theme_file_uri("/assets/js/util.js"), array('jquery'), '1.0', true );
-    wp_enqueue_script('main-bap-js', get_theme_file_uri("/assets/js/main.js"), array('jquery'), '1.0', true );
-    wp_enqueue_script('demo-bap-js', get_theme_file_uri("/assets/js/demo.js"), array('jquery'), '1.0', true );
+    wp_enqueue_script('demo-bap-js', get_theme_file_uri("/assets/app.js"), array('jquery'), '1.0', true );
    
       
     
