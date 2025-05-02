@@ -27,12 +27,34 @@ get_header();
         </div>
 
         <div class="pub-container">
-            <h3 style="margin: 2rem 0; color: #000000;">SELECTED POEMS</h3>
+            <h3 style="margin: 2rem 0; color: #000000;">SELECTED ESSAYS</h3>
             <?php 
             while(have_posts()) {
                 the_post();  
                 $genre = get_field('genre');
-                if ($genre == 'essays') : ?>
+                if ($genre == 'essay') : ?>
+                    <div class="pub" style="margin:1rem 0;">
+                        <h4 style="color: #000000; font-family: condensed; font-weight: 400; font-size:14px; text-transform: uppercase; line-height: 1em; letter-spacing: .12em;">
+                            <?php echo get_field('journal') ?>
+                        </h4>
+                        <p style="text-transform: Capitalize; font-family: garamond; margin:1rem 0 0 1rem;">
+                            <a href="<?php echo get_field('link') ?>" style="color: #000000; text-transform: capitalize;">
+                                “<?php echo get_field('title'); ?>”
+                            </a>
+                        </p>
+                    </div>
+                <?php endif; 
+            } 
+            ?>
+        </div>
+
+        <div class="pub-container">
+            <h3 style="margin: 2rem 0; color: #000000;">SELECTED INTERVIEWS</h3>
+            <?php 
+            while(have_posts()) {
+                the_post();  
+                $genre = get_field('genre');
+                if ($genre == 'interview') : ?>
                     <div class="pub" style="margin:1rem 0;">
                         <h4 style="color: #000000; font-family: condensed; font-weight: 400; font-size:14px; text-transform: uppercase; line-height: 1em; letter-spacing: .12em;">
                             <?php echo get_field('journal') ?>
