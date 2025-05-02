@@ -86,25 +86,18 @@
 
     <section class="presentation-container">
         <h2 class="section-title">Readings</h2>
-        <?php 
-                        $homepagePosts = new WP_Query(array(
-                            'posts_per_page' => 3,
-                            'post_type' => 'video'
-                        ));
-                        while($homepagePosts->have_posts()) {
-                            $homepagePosts->the_post(); ?>
         <div class="video-container">
+        <?php 
+            $homepagePosts = new WP_Query(array(
+            'posts_per_page' => 3,
+             'post_type' => 'video'
+                ));
+                while($homepagePosts->have_posts()) {
+                $homepagePosts->the_post(); ?>
             <div class="video">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/<?php echo get_field('video_id') ?>" allowfullscreen></iframe>
             </div>
-            
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen></iframe>
-            </div>
-            
-            <div class="video">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen></iframe>
-            </div>
+            <?php } wp_reset_postdata(); ?>
         </div>
     </section>
 <?php get_footer() ?>
