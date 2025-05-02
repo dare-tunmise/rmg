@@ -4,6 +4,7 @@
 function tunmise_style_files(){
     //loading javascript
     wp_enqueue_script('demo-bap-js', get_theme_file_uri("/assets/app.js"), array('jquery'), '1.0', true );
+    wp_enqueue_script('demo-script-js', get_theme_file_uri("/assets/script.js"), array('jquery'), '1.0', true );
     //loading custom google fonts
     wp_enqueue_style('custom-google-font', '//fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
     wp_enqueue_style('more-font', '//fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');

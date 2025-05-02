@@ -1,10 +1,16 @@
 <?php get_header() ?>
     <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay">
-            <h1>RASAQ MALIK GBOLAHAN</h1>
-            <p>Nigerian poet and translator. Cofounder of Àtẹ́lẹwọ, the first digital journal devoted to publishing work written in the Yorùbá language.</p>
-            <a href="<?php echo site_url('/about') ?>"><button class="read-more-btn">Read More</button></a>
+        <div class="background-slider"></div>
+        <div class="content">
+        <h1 class="title animate-fadeInUp">RASAQ MALIK GBOLAHAN</h1>
+        <p class="subtitle animate-fadeInUp">Nigerian poet and translator. Cofounder of Àtẹ́lẹwọ, the first digital journal devoted to publishing work written in the Yorùbá language.</p>
+        <div class="cta-buttons animate-fadeInUp">
+            <button class="primary-cta">
+            Full Bio
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <button class="secondary-cta">Contact</button>
+        </div>
         </div>
     </section>
     
