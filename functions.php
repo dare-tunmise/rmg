@@ -4,18 +4,13 @@
 function tunmise_style_files(){
     //loading javascript
     wp_enqueue_script('demo-bap-js', get_theme_file_uri("/assets/app.js"), array('jquery'), '1.0', true );
-   
-      
-    
     //loading custom google fonts
-    wp_enqueue_style('custom-google-font', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i');
+    wp_enqueue_style('custom-google-font', '//fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 	wp_enqueue_style('cdn', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
     //loading fontawesome from external cdn
 
     //loading css from local build file
-    wp_enqueue_style('slategraph_main_styles', get_theme_file_uri('/assets/css/main.css'));
-    wp_enqueue_style('slategraph_more_styles', get_theme_file_uri('/assets/css/fontawesome-all.min.css'));
-    wp_enqueue_style('slategraph_other_styles', get_theme_file_uri('/assets/css/noscript.css'));
+    wp_enqueue_style('slategraph_main_styles', get_theme_file_uri('/assets/styles.css'));
 }
 
 //invoking fucntions to load script
