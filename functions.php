@@ -72,7 +72,7 @@ function tunmise_post_types()
         'menu_icon' => 'dashicons-admin-users'
 
     ));
-    
+
     register_post_type("projects", array(
         'public' => true,
         'supports' => array('title', 'editor', 'excerpt'),
@@ -123,6 +123,23 @@ function tunmise_post_types()
 
         ),
         'menu_icon' => 'dashicons-youtube'
+    ));
+
+    register_post_type("publications", array(
+        'public' => true,
+        'supports' => array('title', 'editor', 'excerpt'),
+        'has_archive'=> true,
+        'show_in_rest' => false,
+        'labels' => array(
+            'name' => 'Publications',
+            'add_new' => 'Add New Publication',
+            'add_new_item' => 'Add New Publication',
+            'edit_item' => 'Edit Publication',
+            'all_items' => 'All Publications',
+            'singular_name' => 'publication'
+        ),
+        'menu_icon' => 'dashicons-archive'
+
     ));
 };
 
