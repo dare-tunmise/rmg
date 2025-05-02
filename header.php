@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <div class="logo">RASAQ MALIK G.</div>
+        <div class="logo">RMG.</div>
         <nav id="nav">
             <ul>
                 <li><a href="<?php echo site_url('/'); ?>">Home</a></li>

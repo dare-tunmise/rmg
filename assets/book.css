@@ -1,264 +1,174 @@
-/* Books Section */
+/* Books Section Styles */
 .books-section {
-    padding: 5rem 2rem;
-    background-color: #fff;
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
     color: #333;
 }
 
+/* Carousel Container */
 .carousel-container {
     position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
     overflow: hidden;
-    touch-action: pan-y;
-    -webkit-user-select: none;
-    user-select: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000000;
 }
 
+/* Carousel Track */
 .carousel {
     display: flex;
-    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: transform 0.5s ease-in-out;
     will-change: transform;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
 
+/* Carousel Items */
 .carousel-item {
     min-width: 100%;
     display: flex;
-    padding: 2rem;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.book-cover img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .book-info {
-    flex: 1;
-    padding-right: 2rem;
+    margin-top: 1.5rem;
 }
 
 .book-title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
-}
-
-.book-synopsis {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #222;
 }
 
 .book-meta {
     display: flex;
-    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
     font-size: 0.9rem;
-    color: #777;
 }
 
-.book-meta span {
-    margin-right: 1.5rem;
-}
-
-.book-cover {
-    flex: 0 0 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.book-cover img {
-    max-width: 100%;
-    height: auto;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.book-cover img:hover {
-    transform: scale(1.03);
+.book-synopsis {
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 1.5rem;
 }
 
 .read-more {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
-    background-color: #333;
+    padding: 0.5rem 1rem;
+    background: #4a6fa5;
     color: white;
     text-decoration: none;
     border-radius: 4px;
-    font-weight: 500;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s;
+    margin: 1rem 0;
 }
 
 .read-more:hover {
-    background-color: #555;
+    background: #3a5a8f;
 }
 
+/* Carousel Controls */
 .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-    touch-action: manipulation;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .carousel-btn {
-    background-color: #333;
-    color: white;
+    pointer-events: all;
+    background: rgba(48, 46, 46, 0.7);
     border: none;
-    width: 3rem;
-    height: 3rem;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin: 0 0.5rem;
-    cursor: pointer;
     font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    -webkit-tap-highlight-color: transparent;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin: 0 1rem;
+    color: #333;
 }
 
 .carousel-btn:hover {
-    background-color: #555;
+    background: rgba(255, 255, 255, 0.9);
 }
 
-.carousel-btn:active {
-    transform: scale(0.95);
-    background-color: #222;
-}
-
+/* Carousel Indicators */
 .carousel-indicators {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    padding: 1rem 0;
+    gap: 0.5rem;
 }
 
-.indicator {
+.carousel-indicator {
     width: 10px;
     height: 10px;
-    background-color: #ccc;
     border-radius: 50%;
-    margin: 0 5px;
+    background: #ccc;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s;
 }
 
-.indicator.active {
-    background-color: #333;
+.carousel-indicator.active {
+    background: #4a6fa5;
 }
 
-@media (max-width: 992px) {
+/* Responsive Styles */
+@media (min-width: 768px) {
     .carousel-item {
-        flex-direction: column;
-    }
-    
-    .book-info {
-        padding-right: 0;
-        margin-bottom: 2rem;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .book-cover {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        aspect-ratio: 2/3; /* Maintain book cover aspect ratio (adjust if needed) */
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
+        flex-direction: row;
+        gap: 2rem;
         align-items: center;
     }
     
-    .book-cover img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* This will make the image cover the container */
-        object-position: center; /* Focus on center of image */
+    .book-cover {
+        flex: 0 0 40%;
     }
     
-    .books-section {
-        padding: 3rem 1rem;
+    .book-info {
+        flex: 1;
+        margin-top: 0;
+    }
+    
+    .book-cover img {
+        max-width: 100%;
     }
 }
 
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-    }
-    
-    .book-title {
-        font-size: 1.6rem;
-        margin-bottom: 0.75rem;
-    }
-    
-    .book-synopsis {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-    
-    .book-meta {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .book-meta span {
-        margin-bottom: 0.5rem;
-    }
-
-    .carousel-btn {
-        width: 2.5rem;
-        height: 2.5rem;
-        font-size: 1rem;
+@media (min-width: 992px) {
+    .books-section {
+        padding: 3rem 2rem;
     }
     
     .carousel-item {
-        padding: 1rem 0.5rem;
-    }
-    
-    .read-more {
-        padding: 0.6rem 1.2rem;
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {    
-    .section-title {
-        font-size: 1.8rem;
-    }
-    
-    .book-title {
-        font-size: 1.4rem;
-    }
-    
-    .book-cover {
-        max-width: 280px;
-        background-color: blue;
-    }
-    
-    .carousel-controls {
-        margin-top: 1rem;
-    }
-    
-    .carousel-btn {
-        width: 2.2rem;
-        height: 2.2rem;
-    }
-    
-    .indicator {
-        width: 8px;
-        height: 8px;
-        margin: 0 4px;
-    }
-    
-    .carousel-indicators {
-        margin-top: 0.5rem;
+        padding: 2rem;
     }
 }
