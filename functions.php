@@ -94,6 +94,24 @@ function tunmise_post_types()
         'menu_icon' => 'dashicons-admin-users'
 
     ));
+
+    register_post_type('video', array(
+        'supports' => array('title', 'editor', 'excerpt'),
+        'rewrite' => array('slug' => 'videos'),
+        'has_archive' => true,
+        'public' => true,
+        'show_in_rest' => false,
+        'labels' => array(
+            'name' => 'video',
+            'add_new' => 'Add New Video',
+            'add_new_item' => 'Add New Video',
+            'edit_item' => 'Edit Video',
+            'all_items' => 'All Videos',
+            'singular_name' => 'Video'
+
+        ),
+        'menu_icon' => 'dashicons-youtube'
+    ));
 };
 
 add_action('init', 'tunmise_post_types');

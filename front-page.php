@@ -86,6 +86,13 @@
 
     <section class="presentation-container">
         <h2 class="section-title">Readings</h2>
+        <?php 
+                        $homepagePosts = new WP_Query(array(
+                            'posts_per_page' => 3,
+                            'post_type' => 'video'
+                        ));
+                        while($homepagePosts->have_posts()) {
+                            $homepagePosts->the_post(); ?>
         <div class="video-container">
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen></iframe>
