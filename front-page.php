@@ -4,7 +4,7 @@
         <div class="hero-overlay">
             <h1>RASAQ MALIK GBOLAHAN</h1>
             <p>Nigerian poet and translator. Cofounder of Àtẹ́lẹwọ, the first digital journal devoted to publishing work written in the Yorùbá language.</p>
-            <button class="read-more-btn">Read More</button>
+            <a href="<?php echo site_url('/about') ?>"><button class="read-more-btn">Read More</button></a>
         </div>
     </section>
     
