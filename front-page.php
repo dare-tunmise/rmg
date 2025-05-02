@@ -15,26 +15,36 @@
         <div class="carousel-container">
             <div class="carousel" id="books-carousel">
                 <!-- Book 1 -->
+                <?php 
+            $homepagePosts = new WP_Query(array(
+            'posts_per_page' => 5,
+             'post_type' => 'books'
+                ));
+                while($homepagePosts->have_posts()) {
+                $homepagePosts->the_post(); ?>
+
                 <div class="carousel-item">
                     <div class="book-info">
-                        <h3 class="book-title">The Silent Echo</h3>
+                        <h3 class="book-title"><?php echo get_field('book_title') ?></h3>
                         <div class="book-meta">
-                            <span>Fiction</span>
-                            <span>Published: 2023</span>
-                            <span>352 pages</span>
+                            <span><?php echo get_field('book_genre') ?></span>
+                            <span>Published: <?php echo get_field('book_year') ?></span>
+                            <span><?php echo get_field('book_publisher') ?></span>
                         </div>
                         <p class="book-synopsis">
-                            In a small coastal town where secrets wash ashore with the tide, Eleanor Harrison returns after twenty years to confront the mysteries of her past. When strange echoes begin to haunt the cliffside mansion she inherited, Eleanor discovers her family's connection to an ancient legend that may hold the key to present-day disappearances. As she delves deeper, the line between reality and myth begins to blur, forcing her to question everything she thought she knew about her identity.
+                        <?php the_content() ?> 
                         </p>
-                        <a href="#" class="read-more">Read More</a>
+                        <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
                     </div>
                     <div class="book-cover">
-                        <img src="https://m.media-amazon.com/images/I/91vCORLPlmL._SY522_.jpg" alt="The Silent Echo Book Cover">
+                       <img src="<?php echo get_field('book_cover') ?>" alt="The Silent Echo Book Cover">
+                        <!-- <img src="https://m.media-amazon.com/images/I/91vCORLPlmL._SY522_.jpg" alt="The Silent Echo Book Cover"> -->
                     </div>
                 </div>
+                <?php } wp_reset_postdata(); ?>
                 
                 <!-- Book 2 -->
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <div class="book-info">
                         <h3 class="book-title">Veiled Horizons</h3>
                         <div class="book-meta">
@@ -50,10 +60,9 @@
                     <div class="book-cover">
                         <img src="https://samizdat.com.ng/wp-content/uploads/2023/11/WhatsApp-Image-2019-10-21-at-8.10.34-PM.jpeg" alt="Veiled Horizons Book Cover">
                     </div>
-                </div>
+                </div> -->
                 
-                <!-- Book 3 -->
-                <div class="carousel-item">
+                <!-- <div class="carousel-item">
                     <div class="book-info">
                         <h3 class="book-title">Midnight Chronicles</h3>
                         <div class="book-meta">
@@ -69,7 +78,7 @@
                     <div class="book-cover">
                         <img src="https://africanpoetrybf.unl.edu/wp-content/uploads/2018/04/NoHomeInThisLand-scaled.jpg" alt="Midnight Chronicles Book Cover">
                     </div>
-                </div>
+                </div> -->
                 
             </div>
             

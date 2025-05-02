@@ -6,6 +6,7 @@ function tunmise_style_files(){
     wp_enqueue_script('demo-bap-js', get_theme_file_uri("/assets/app.js"), array('jquery'), '1.0', true );
     //loading custom google fonts
     wp_enqueue_style('custom-google-font', '//fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    wp_enqueue_style('more-font', '//fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 	wp_enqueue_style('cdn', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
     //loading fontawesome from external cdn
 
@@ -17,12 +18,6 @@ function tunmise_style_files(){
 add_action('wp_enqueue_scripts', 'tunmise_style_files');
 
 function tunmise_features() {
-
-    //register the menu here
-    //register_nav_menu('headerMenuLocation', 'Header Menu Location');
-    //register_nav_menu('footerLocationOne', 'Footer Location One');
-   // register_nav_menu('footerLocationTwo', 'Footer Location Two');
-    //this is to get the site title
     add_theme_support('title-tag');
 }
 
