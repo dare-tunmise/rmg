@@ -55,7 +55,24 @@ add_action( 'wp_enqueue_scripts', 'wps_deregister_styles', 100 );
 
 function tunmise_post_types()
 {
+    
+    register_post_type("about", array(
+        'public' => true,
+        'supports' => array('title', 'editor', 'excerpt'),
+        'has_archive'=> true,
+        'show_in_rest' => false,
+        'labels' => array(
+            'name' => 'About',
+            'add_new' => 'Add New About',
+            'add_new_item' => 'Add New About',
+            'edit_item' => 'Edit About',
+            'all_items' => 'All About',
+            'singular_name' => 'About'
+        ),
+        'menu_icon' => 'dashicons-admin-users'
 
+    ));
+    
     register_post_type("projects", array(
         'public' => true,
         'supports' => array('title', 'editor', 'excerpt'),

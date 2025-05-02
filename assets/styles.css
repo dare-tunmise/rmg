@@ -433,6 +433,9 @@ nav ul li a:hover {
 }
 
 /* about */
+.about-section {
+    width: 100%;
+}
 .about-page {
     max-width: 800px;
     margin: 10rem auto;
@@ -441,14 +444,14 @@ nav ul li a:hover {
 }
 
 /* Photo Section */
-.about-photo {
-    /* text-align: center; */
+.about-image{
     margin-bottom: 2rem;
+    width: 100%;
+    max-width: 800px;
 }
 
-.about-photo img {
+.about-photo{
     width: 100%;
-    max-width: 500px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }

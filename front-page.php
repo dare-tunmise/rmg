@@ -42,44 +42,6 @@
                     </div>
                 </div>
                 <?php } wp_reset_postdata(); ?>
-                
-                <!-- Book 2 -->
-                <!-- <div class="carousel-item">
-                    <div class="book-info">
-                        <h3 class="book-title">Veiled Horizons</h3>
-                        <div class="book-meta">
-                            <span>Science Fiction</span>
-                            <span>Published: 2022</span>
-                            <span>418 pages</span>
-                        </div>
-                        <p class="book-synopsis">
-                            When Dr. Amara Chen develops a revolutionary algorithm that bridges parallel universes, she doesn't expect to receive a message from herself—a version who made very different choices. As political tensions rise around her breakthrough, Amara must navigate ethical dilemmas and personal revelations while protecting her discovery from those who would weaponize it. Across dimensions, versions of herself are making choices that ripple through the multiverse, leading to an inevitable collision of realities.
-                        </p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                    <div class="book-cover">
-                        <img src="https://samizdat.com.ng/wp-content/uploads/2023/11/WhatsApp-Image-2019-10-21-at-8.10.34-PM.jpeg" alt="Veiled Horizons Book Cover">
-                    </div>
-                </div> -->
-                
-                <!-- <div class="carousel-item">
-                    <div class="book-info">
-                        <h3 class="book-title">Midnight Chronicles</h3>
-                        <div class="book-meta">
-                            <span>Fantasy</span>
-                            <span>Published: 2020</span>
-                            <span>476 pages</span>
-                        </div>
-                        <p class="book-synopsis">
-                            In a world where night lasts for months and magical abilities awaken only in darkness, Lyra discovers she possesses a rare power that makes her both valuable and hunted. Joined by an unlikely group of allies—each with their own secrets—she embarks on a journey to restore balance to a fractured realm. As ancient prophecies begin to unfold, Lyra must confront her destiny while navigating political intrigue and betrayal from those closest to her.
-                        </p>
-                        <a href="#" class="read-more">Read More</a>
-                    </div>
-                    <div class="book-cover">
-                        <img src="https://africanpoetrybf.unl.edu/wp-content/uploads/2018/04/NoHomeInThisLand-scaled.jpg" alt="Midnight Chronicles Book Cover">
-                    </div>
-                </div> -->
-                
             </div>
             
             <div class="carousel-controls">
