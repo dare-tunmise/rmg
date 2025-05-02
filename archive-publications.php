@@ -1,7 +1,7 @@
 <?php 
 get_header(); 
 ?>
-    <section class="first-container" style="max-width: 800px; margin: 5rem auto; paddinfg;">
+    <section class="first-container" style="max-width: 800px; margin: 5rem auto; padding:1rem  2rem;">
         <h1 style="margin: 1.5rem 0; color: #000000; font-weight: 700; font-family: condensed; font-size:2.5rem;">Publications</h1>
 
         <div class="pub-container">

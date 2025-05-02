@@ -12,11 +12,12 @@
         <div class="logo">RASAQ MALIK G.</div>
         <nav id="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Publications</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="<?php echo site_url('/'); ?>">Home</a></li>
+                <li><a href="<?php echo site_url('/about'); ?>">About</a></li>
+                <li><a href="<?php echo site_url('#books'); ?>">Books</a></li>
+                <li><a href="<?php echo site_url('/publications'); ?>">Publications</a></li>
+                <li><a href="<?php echo site_url('#performances'); ?>">Performances</a></li>
+                <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
             </ul>
         </nav>
         <div class="hamburger" id="hamburger">

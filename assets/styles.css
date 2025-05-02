@@ -132,7 +132,7 @@ nav ul li a:hover {
 }
 
  /* Books Section */
- .books-section {
+ /* .books-section {
     padding: 5rem 2rem;
     background-color: #ffffff;
 }
@@ -272,7 +272,7 @@ nav ul li a:hover {
 
 .indicator.active {
     background-color: #333;
-}
+} */
 
 @keyframes scrollBackground {
     0% {
@@ -285,7 +285,7 @@ nav ul li a:hover {
     100% { background-position: 100% center; } */
 }
 @media (max-width: 992px) {
-    .carousel-item {
+    /* .carousel-item {
         flex-direction: column;
     }
     
@@ -301,7 +301,7 @@ nav ul li a:hover {
     
     .book-cover img {
         max-width: 70%;
-    }
+    } */
 }
 
 @media (max-width: 768px) {
@@ -654,7 +654,7 @@ cite {
 }
 
 /* Responsive Adjustments */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .book-cover-section {
         flex-direction: column;
         align-items: center;
@@ -665,4 +665,4 @@ cite {
     .purchase-links {
         justify-content: center;
     }
-}
+} */

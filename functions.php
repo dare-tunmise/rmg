@@ -12,6 +12,8 @@ function tunmise_style_files(){
 
     //loading css from local build file
     wp_enqueue_style('slategraph_main_styles', get_theme_file_uri('/assets/styles.css'));
+    wp_enqueue_style('slategraph_book_styles', get_theme_file_uri('/assets/book.css'));
+    wp_enqueue_style('slategraph_hero_styles', get_theme_file_uri('/assets/hero.css'));
 }
 
 //invoking fucntions to load script
