@@ -4,9 +4,9 @@
             <div class="footer-icon">
             <div class="icon-box"><a href="https://web.facebook.com/rasaq.m.gbolahan"><i
                             class="fa-brands fa-facebook-f"></i></a></div>
-                <div class="icon-box"><a href="https://x.com/Hussyainy"><i class="fa-brands fa-x-twitter"></i></a>
+                <div class="icon-box"><a href="https://x.com/rasaq_malik"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
-                <div class="icon-box"><a href="https://www.linkedin.com/in/hussain-ahmed-0501831b6"><i
+                <div class="icon-box"><a href="https://ng.linkedin.com/in/rasaq-malik-gbolahan-7441bb166"><i
                             class="fa-brands fa-linkedin-in"></i></a></div>
                 <div class="icon-box"><i class="fa-brands fa-youtube"></i></div>
             </div>

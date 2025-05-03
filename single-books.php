@@ -21,7 +21,7 @@ while (have_posts()) {
         <p style="margin: 0 0 .5rem 0;">Publisher: African Poetry Book Fund X Akashic Books, Brooklyn, New York</p> -->
         <p style="margin: 0 0 .5rem 0;"><?php the_content()  ?></p>
 
-        <a href="<?php echo get_field('buy_link'); ?>" class="read-more">Get a copy</a>
+        <a href="<?php echo get_field('book_link'); ?>" class="read-more">Get a copy</a>
 
     </article>
 
