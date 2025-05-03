@@ -81,7 +81,7 @@
     text-decoration: none;
     border-radius: 4px;
     transition: background 0.3s;
-    margin: 1rem 0;
+    margin: 1rem 0 1.5rem;
 }
 
 .read-more:hover {
@@ -150,7 +150,7 @@
     }
     
     .book-cover {
-        flex: 0 0 40%;
+        flex: 0 0 50%;
     }
     
     .book-info {

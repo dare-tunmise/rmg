@@ -2,7 +2,7 @@
         <div class="footer">
             <p class="footer" style="color: gray;">©2025 Rasaq Malik Gbolahan. All Rights Reserved.</p>
             <div class="footer-icon">
-            <div class="icon-box"><a href="https://www.facebook.com/Hussyainy"><i
+            <div class="icon-box"><a href="https://web.facebook.com/rasaq.m.gbolahan"><i
                             class="fa-brands fa-facebook-f"></i></a></div>
                 <div class="icon-box"><a href="https://x.com/Hussyainy"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>

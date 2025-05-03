@@ -35,7 +35,8 @@
                             <span><?php echo get_field('book_publisher') ?></span>
                         </div>
                         <p class="book-synopsis">
-                        <?php the_content() ?> 
+                        <?php echo wp_trim_words(get_the_content(), 100, '...'); ?>
+                        <!-- <?php the_content() ?>  -->
                         </p>
                         <a href="<?php the_permalink(); ?>" class="read-more">Read More</a>
                     </div>
