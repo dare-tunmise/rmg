@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <section class="presentation-container">
+    <section class="presentation-container" id="performances">
         <h2 class="section-title">Readings</h2>
         <div class="video-container">
         <?php 
