@@ -9,7 +9,7 @@ while (have_posts()) {
 
   <section class="inner" style="width: 100%; max-width: 900px; margin: 5rem auto; padding: 1.5rem; align-items: center; justify-content: center;">
    <article>
-        <h2><?php echo get_field('book_title'); ?></h2>
+        <!-- <h2><?php echo get_field('book_title'); ?></h2> -->
         <img src="<?php echo get_field('book_cover') ?>" alt=" book cover of <?php echo get_field('book_title'); ?>" width="100%"; max-width="300px">
         <div class="book-meta">
            <span><?php echo get_field('book_genre') ?></span>
