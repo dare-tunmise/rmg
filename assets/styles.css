@@ -419,3 +419,148 @@ cite {
         justify-content: center;
     }
 } */
+/* Publications Page Structure */
+.publications-container {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 2rem;
+    font-family: 'Georgia', 'Garamond', serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Page Title */
+.publications-title {
+    margin: 1.5rem 0 3rem;
+    color: #000;
+    font-weight: 700;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-size: 2.5rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 1rem;
+}
+
+/* Section Headings */
+.section-heading {
+    margin: 3rem 0 1.5rem;
+    color: #000;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+/* Publication Items */
+.publication-item {
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.publication-item:hover {
+    border-left-color: #4a6fa5;
+}
+
+.publication-journal {
+    color: #666;
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.5rem;
+}
+
+.publication-title {
+    font-family: 'Garamond', 'Georgia', serif;
+    font-size: 1.1rem;
+    margin: 0.5rem 0 0 0;
+    text-transform: capitalize;
+}
+
+.publication-title a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.publication-title a:hover {
+    color: #4a6fa5;
+}
+
+/* Publication Lists */
+.publication-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.publication-list-item {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 2px solid #f0f0f0;
+    font-family: 'Garamond', 'Georgia', serif;
+    font-size: 1.1rem;
+}
+
+.publication-list-item a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-weight: 500;
+}
+
+.publication-list-item a:hover {
+    color: #4a6fa5;
+}
+
+/* Pagination */
+.publications-pagination {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.publications-pagination a, 
+.publications-pagination span {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin: 0 0.25rem;
+    color: #666;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-decoration: none;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.publications-pagination a:hover {
+    color: #4a6fa5;
+    border-color: #4a6fa5;
+}
+
+.publications-pagination .current {
+    color: #fff;
+    background-color: #4a6fa5;
+    border-color: #4a6fa5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .publications-container {
+        padding: 1rem;
+        margin: 3rem auto;
+    }
+    
+    .publications-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .section-heading {
+        margin: 2rem 0 1rem;
+    }
+}
