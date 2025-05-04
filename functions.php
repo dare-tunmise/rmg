@@ -76,23 +76,6 @@ function tunmise_post_types()
 
     ));
 
-    register_post_type("projects", array(
-        'public' => true,
-        'supports' => array('title', 'editor', 'excerpt'),
-        'has_archive' => true,
-        'show_in_rest' => true,
-        'labels' => array(
-            'name' => 'projects',
-            'add_new' => 'Add New Project',
-            'add_new_item' => 'Add New Project',
-            'edit_item' => 'Edit Project',
-            'all_items' => 'All Projects',
-            'singular_name' => 'project'
-        ),
-        'menu_icon' => 'dashicons-portfolio'
-
-    ));
-
     register_post_type("books", array(
         'public' => true,
         'supports' => array('title', 'editor', 'excerpt'),
