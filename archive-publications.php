@@ -49,14 +49,14 @@ get_header();
         </div>
 
         <div class="pub-container">
-            <h3 style="margin: 2rem 0; color: #000000;">SELECTED INTERVIEWS</h3>
+            <h3 style="margin: 1rem 0; color: #000000;">SELECTED INTERVIEWS</h3>
             <ul style="padding-left: 20px;">
             <?php 
             while(have_posts()) {
                 the_post();  
                 $genre = get_field('genre');
                 if ($genre == 'interview') : ?>
-                    
+                     <li><a href="<?php echo get_field('link') ?>" style="color: #000000; font-weight: 500; font-size:20px;"> <?php echo get_field('journal') ?></a></li>
                     <!-- <div class="pub" style="margin:1rem 0;">
 
                         <h4 style="color: #000000; font-family: condensed; font-weight: 400; font-size:14px; text-transform: uppercase; line-height: 1em; letter-spacing: .12em;">
@@ -75,7 +75,7 @@ get_header();
         </div>
 
         <div class="pub-container">
-            <h3 style="margin: 2rem 0; color: #000000;">SELECTED INTERVIEWS</h3>
+            <h3 style="margin: 2rem 0; color: #000000;">SELECTED REVIEWS</h3>
             <ul>
             <?php 
             while(have_posts()) {
