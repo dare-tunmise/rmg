@@ -29,7 +29,7 @@
 </head>
 <body>
     <header>
-        <div class="logo"><img src="<?php echo get_theme_file_uri("/assets/images/RMG.png") ?>" alt=""></div>
+        <div class="logo">RMG</div>
         <nav id="nav">
             <ul>
                 <li><a href="<?php echo site_url('/'); ?>">Home</a></li>
