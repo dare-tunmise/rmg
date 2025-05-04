@@ -20,6 +20,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     border: 1px solid #000000;
+    background: #fff;
 }
 
 /* Carousel Track */
@@ -34,22 +35,32 @@
     min-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 0;
     box-sizing: border-box;
     background: #fff;
 }
 
-.book-cover img {
+/* Book Cover - Mobile First */
+.book-cover {
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
 }
 
+.book-cover img {
+    /* width: auto; */
+    width: 100%;
+    height: auto;
+    /* object-fit: contain;
+    border-radius: 4px; */
+}
+
+/* Book Info */
 .book-info {
-    margin-top: 1.5rem;
+    padding: 1.5rem;
 }
 
 .book-title {
@@ -76,10 +87,13 @@
 .read-more {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background: #4a6fa5;
-    color: white;
+
+    /* background: #4a6fa5; */
+    border: 1px solid #000000;
+    box-shadow: #4a6fa5;
+    color: #000000;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 25px;
     transition: background 0.3s;
     margin: 1rem 0 1.5rem;
 }
@@ -113,11 +127,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 1rem;
-    color: #333;
+    color: white;
 }
 
 .carousel-btn:hover {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(48, 46, 46, 0.9);
 }
 
 /* Carousel Indicators */
@@ -141,25 +155,30 @@
     background: #4a6fa5;
 }
 
-/* Responsive Styles */
+/* Desktop Styles */
 @media (min-width: 768px) {
     .carousel-item {
         flex-direction: row;
         gap: 2rem;
         align-items: center;
+        padding: 1.5rem;
     }
     
     .book-cover {
-        flex: 0 0 50%;
+        flex: 0 0 45%;
+        padding: 0;
+        background: transparent;
+    }
+    
+    .book-cover img {
+        width: 100%;
+        max-height: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     
     .book-info {
         flex: 1;
-        margin-top: 0;
-    }
-    
-    .book-cover img {
-        max-width: 100%;
+        padding: 0;
     }
 }
 
@@ -170,5 +189,9 @@
     
     .carousel-item {
         padding: 2rem;
+    }
+    
+    .book-cover {
+        flex: 0 0 40%;
     }
 }
