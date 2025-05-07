@@ -10,9 +10,6 @@
         </div>
         </div>
     </section>
-    
-    
-
     <section class="books-section" id="books">
         <h2 class="section-title">My Books</h2>
         
@@ -57,6 +54,23 @@
             <div class="carousel-indicators" id="carousel-indicators">
                 <!-- Indicators will be added via JavaScript -->
             </div>
+        </div>
+    </section>
+
+    <section class="presentation-container" id="performances">
+        <h2 class="section-title">Readings</h2>
+        <div class="video-container">
+        <?php 
+            $homepagePosts = new WP_Query(array(
+            'posts_per_page' => 3,
+             'post_type' => 'video'
+                ));
+                while($homepagePosts->have_posts()) {
+                $homepagePosts->the_post(); ?>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/<?php echo get_field('video_id') ?>" allowfullscreen></iframe>
+            </div>
+            <?php } wp_reset_postdata(); ?>
         </div>
     </section>
 
